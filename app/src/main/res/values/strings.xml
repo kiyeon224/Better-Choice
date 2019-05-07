@@ -2,4 +2,5 @@
     <string name="app_name">Better_Choice</string>
     <string name="tab_text_1">현재의 고민</string>
     <string name="tab_text_2">과거의 고민</string>
+    <string name="title_activity_add">AddActivity</string>
 </resources>
