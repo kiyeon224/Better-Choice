@@ -3,4 +3,9 @@
     <string name="tab_text_1">현재의 고민</string>
     <string name="tab_text_2">과거의 고민</string>
     <string name="title_activity_add">AddActivity</string>
+    <string-array name="brew_array">
+        <item>소비</item>
+        <item>인간관계</item>
+        <item>등등</item>
+    </string-array>
 </resources>
