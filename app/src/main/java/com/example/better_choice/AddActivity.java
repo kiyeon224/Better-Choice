@@ -1,22 +1,16 @@
 package com.example.better_choice;
 
-import android.animation.ObjectAnimator;
+import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.AppBarLayout;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.design.widget.StateListAnimator;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.Spinner;
 
 public class AddActivity extends AppCompatActivity {
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +31,17 @@ public class AddActivity extends AppCompatActivity {
 
         staticAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         staticSpinner.setAdapter(staticAdapter);
+
+        /* 다음 버튼 */
+        Button btn_next = findViewById(R.id.btn_next);
+
+        btn_next.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //AddActivity.class로 넘어가는 intent 실행
+                //startActivity(new Intent(AddActivity01.this, AddActivity02.class));
+            }
+        });
     }
 
     @Override
