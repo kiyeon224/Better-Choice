@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //AddActivity.class로 넘어가는 intent 실행
-                startActivity(new Intent(MainActivity.this, AddActivity.class));
+                startActivity(new Intent(MainActivity.this, AddActivity01.class));
             }
         });
     }
