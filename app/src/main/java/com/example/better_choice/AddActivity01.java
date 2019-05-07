@@ -16,14 +16,14 @@ public class AddActivity01 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add01);
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+        //Toolbar toolbar = findViewById(R.id.toolbar);
+        //setSupportActionBar(toolbar);
 
-        getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_back_afafaf_24dp);  //뒤로가기 icon을 ic_back_afafaf_24dp로 바꿔줌
+        //getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_back_afafaf_24dp);  //뒤로가기 icon을 ic_back_afafaf_24dp로 바꿔줌
 
         /* 뒤로가기 버튼 */
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setHomeButtonEnabled(true);
+        //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        //getSupportActionBar().setHomeButtonEnabled(true);
 
         /* 고민의 유형 선택 (Spinner) */
         Spinner staticSpinner = (Spinner) findViewById(R.id.static_spinner);
@@ -46,7 +46,7 @@ public class AddActivity01 extends AppCompatActivity {
         });
     }
 
-    @Override
+/*    @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
             case android.R.id.home:{ //toolbar의 back키 눌렀을 때 동작
@@ -55,7 +55,6 @@ public class AddActivity01 extends AppCompatActivity {
             }
         }
         return super.onOptionsItemSelected(item);
-    }
-
+    }*/
 
 }

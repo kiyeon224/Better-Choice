@@ -14,22 +14,16 @@ public class AddActivity02 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_add01);
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+        setContentView(R.layout.activity_add02);
+        //Toolbar toolbar = findViewById(R.id.toolbar);
+        //setSupportActionBar(toolbar);
 
-        getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_back_afafaf_24dp);  //뒤로가기 icon을 ic_back_afafaf_24dp로 바꿔줌
+        //getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_back_afafaf_24dp);  //뒤로가기 icon을 ic_back_afafaf_24dp로 바꿔줌
 
         /* 뒤로가기 버튼 */
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setHomeButtonEnabled(true);
+        //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        //getSupportActionBar().setHomeButtonEnabled(true);
 
-        /* 고민의 유형 선택 (Spinner) */
-        Spinner staticSpinner = (Spinner) findViewById(R.id.static_spinner);
-        ArrayAdapter<CharSequence> staticAdapter = ArrayAdapter.createFromResource(this, R.array.brew_array, android.R.layout.simple_spinner_item);
-
-        staticAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        staticSpinner.setAdapter(staticAdapter);
 
         /* 다음 버튼 */
         Button btn_next = findViewById(R.id.btn_next);
@@ -43,16 +37,16 @@ public class AddActivity02 extends AppCompatActivity {
         });
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()){
-            case android.R.id.home:{ //toolbar의 back키 눌렀을 때 동작
-                finish();   //끝내기
-                return true;
-            }
-        }
-        return super.onOptionsItemSelected(item);
-    }
+//    @Override
+//    public boolean onOptionsItemSelected(MenuItem item) {
+//        switch (item.getItemId()){
+//            case android.R.id.home:{ //toolbar의 back키 눌렀을 때 동작
+//                finish();   //끝내기
+//                return true;
+//            }
+//        }
+//        return super.onOptionsItemSelected(item);
+//    }
 
 
 }
