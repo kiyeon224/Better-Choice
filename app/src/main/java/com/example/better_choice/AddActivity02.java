@@ -24,8 +24,8 @@ public class AddActivity02 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //AddActivity.class로 넘어가는 intent 실행
-                startActivity(new Intent(AddActivity02.this, MainActivity.class));
-                overridePendingTransition(0, R.anim.anim_slide_out_bottom);
+                startActivity(new Intent(AddActivity02.this, AddActivity03.class));
+                overridePendingTransition(R.anim.anim_slide_in_right, R.anim.anim_slide_out_left);
             }
         });
 

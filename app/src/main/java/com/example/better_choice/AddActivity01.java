@@ -18,12 +18,12 @@ public class AddActivity01 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add01);
 
-        /* 고민의 유형 선택 (Spinner) */
-        Spinner staticSpinner = (Spinner) findViewById(R.id.static_spinner);
-        ArrayAdapter<CharSequence> staticAdapter = ArrayAdapter.createFromResource(this, R.array.brew_array, android.R.layout.simple_spinner_item);
+        /* 고민의 유형 선택 */
+        Spinner kindSpinner = (Spinner) findViewById(R.id.kind_spinner);
+        ArrayAdapter<CharSequence> staticAdapter = ArrayAdapter.createFromResource(this, R.array.kind_array, android.R.layout.simple_spinner_item);
 
         staticAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        staticSpinner.setAdapter(staticAdapter);
+        kindSpinner.setAdapter(staticAdapter);
 
         /* 다음 버튼 */
         Button btn_next = (Button)findViewById(R.id.btn_next);
