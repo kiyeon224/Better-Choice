@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddActivity">
+
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="@dimen/button_back"
+        android:layout_height="@dimen/button_back"
+        android:background="@drawable/ic_back_afafaf_24dp"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        />
+
+    <include
+        android:id="@+id/include_add"
+        layout="@layout/content_add01" />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="다음"
+        android:textSize="25dp"
+        android:textColor="#fff"
+        app:layout_anchor="@+id/include_add"
+        app:layout_anchorGravity="bottom|center"
+        />
+
+</android.support.design.widget.CoordinatorLayout>

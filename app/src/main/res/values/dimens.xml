@@ -5,8 +5,9 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="appbar_padding">16dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
-    <dimen name="appbar_padding_top">8dp</dimen>
     <dimen name="add_ic_margin">8dp</dimen>
     <dimen name="add_text_size">10pt</dimen>
     <dimen name="add_height">150px</dimen>
+    <dimen name="button_back">36dp</dimen>
+    <dimen name="add_marginTop">72dp</dimen>
 </resources>

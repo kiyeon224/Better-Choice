@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddActivity01"
+    android:layout_marginTop="@dimen/add_marginTop"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="이름"
+        android:textSize="@dimen/add_text_size"
+        android:textColor="@color/colorBlack"
+        android:layout_marginHorizontal="@dimen/activity_padding"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:layout_marginHorizontal="@dimen/activity_padding"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="유형"
+        android:textSize="@dimen/add_text_size"
+        android:textColor="@color/colorBlack"
+        android:layout_marginBottom="@dimen/activity_padding"
+        android:layout_marginHorizontal="@dimen/activity_padding"
+        />
+
+    <Spinner
+        android:id="@+id/kind_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/activity_padding"
+        />
+
+</LinearLayout>
